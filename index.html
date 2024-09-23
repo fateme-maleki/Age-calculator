@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age-calculator</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="date">
+        <div class="day">
+          <label for="bday">Day</label>
+          <input
+            type="number"
+            id="bday"
+            name="bday"
+            placeholder="DD"
+            required
+          />
+          <datalist id="dayl"></datalist>
+        </div>
+        <div class="month">
+          <label for="bmonth">Month</label>
+          <input
+            type="number"
+            id="bmonth"
+            name="bmonth"
+            placeholder="MM"
+            required
+          />
+          <datalist id="monthl"></datalist>
+        </div>
+        <div class="year">
+          <label for="byear">year</label>
+          <input
+            type="number"
+            id="byear"
+            name="byear"
+            placeholder="YYYY"
+            required
+          />
+          <datalist id="yearl"></datalist>
+        </div>
+      </div>
+
+      <div class="line-icon">
+        <hr />
+        <button type="button" onclick="calculateAge()">
+          <img
+            src="D:\github\Age-calculator\resources\images\icon-arrow.svg"
+            alt="costum icon"
+          />
+        </button>
+      </div>
+      <div class="result">
+        <p><span id="years">--</span> <span id="yea"> years</span></p>
+        <p><span id="months">--</span> <span id="mon"> months</span></p>
+        <p><span id="days">--</span> <span id="da"> days</span></p>
+      </div>
+      <script src="./age.js"></script>
+    </section>
+  </body>
+</html>
